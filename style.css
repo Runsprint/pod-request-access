@@ -169,4 +169,8 @@ span{
         height: 242px;
         background-position: right;
     }
+    .tag{
+        color:blue;
+        display: none;
+    }
 }
