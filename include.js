@@ -7,6 +7,7 @@ let input = document.getElementById("input1");
 gretchen.addEventListener("click", function(){
     if(expressions.test(input.value)){
         input.style.background = "green";
+        h5[0].style.display = "none";
     }else {
         h5[0].style.display = "block";
     }  
