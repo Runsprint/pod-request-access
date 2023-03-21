@@ -4,21 +4,13 @@ let h5 = document.getElementsByClassName("tag");
 let expressions = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 let input = document.getElementById("input1");
 
-// regular expretions
-//eventlistener
-//sawyisi lekcia js
-//shemidzlia gavamwvano
-
 gretchen.addEventListener("click", function(){
     if(expressions.test(input.value)){
         input.style.background = "green";
     }else {
         h5[0].style.display = "block";
-        // h5[0].style.color = "green";
-        console.log("jsbj");
     }  
 });
-// .value aris imistvis, rom
 
 
 
@@ -30,6 +22,7 @@ gretchen.addEventListener("click", function(){
 
 
 
+// just exercise
 
 
 
@@ -65,16 +58,17 @@ gretchen.addEventListener("click", function(){
 // tu stringi sheviyvane, rror.
 // mqondes gilaki, roca davaklikeb yvela ricxvs daematos + input da gamoisaxos ekranze.
 
-let numbers = document.getElementsByClassName("something");
-let nums = numbers.value ;
-let length = numbers.length;
-for(let i = 0 ; i < length ; i++){
-    
-    nums.addEventListener("click", function(){
-        
-        
-    });
+// let array = document.getElementsByClassName("something");
+// let nums = array.value ;
+// let length = array.length;
+// let button = document.getElementById("button0")
 
-}
+// function changeNumber(){
+//     nums = input.values
+// }
+
+// for(let i = 0 ; i < length ; i++){
+//    button.addEventListener("click", changeNumber);
+// }
 
 

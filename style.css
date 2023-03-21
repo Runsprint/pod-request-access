@@ -3,6 +3,7 @@ body{
     background-image: url(./assets/mobile/image-host.jpg);
     background-repeat: no-repeat;
     margin: 0;
+
 }
 main{
     background-color: #121725;
@@ -10,8 +11,6 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100%;
 }
 .title{
     font-weight: 400;
@@ -38,6 +37,13 @@ span{
     width: 55.59px;
     height: 16.95px;
 }
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    gap: 30px;
+}
 .first, .second{
     font-weight: 400;
     font-size: 14px;
@@ -50,7 +56,6 @@ span{
     text-align: left;
 }
 .first{
-    margin-top: 50px;
     margin-bottom: 20px;
     border: none;
 }
@@ -59,22 +64,31 @@ span{
     rgba(84, 230, 175, 1);
     color: #121725;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     border: none;
 }
 .logo{
     padding-top: 72px;
+    
 }
 .logos{
     display: flex;
     justify-content: space-around;
     margin-top: 37px;
+    gap: 25px;
 }
 .buttons{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    /* width: 100%; */
+}
+.tag{
+    display: none;
+    color: red;
+    position: relative;
+    bottom: 84px;
+    right: 39px;
 }
 @media (min-width:768px){
     header{
@@ -89,13 +103,23 @@ span{
         background-image: url(./assets/tablet/image-host.jpg);
         background-repeat: no-repeat;
         background-position: right top;
-        background-size: 300px 412px;
+        background-size: 437px;
+        background-color: #121725;
+    }
+
+    main{
+        align-items: flex-start;
+        width: 378px;
+        opacity: 1;
     }
     .text{
-        background-color: black;
+        background-color:#121725;
         width: 635px;
         height: 509px;
         padding-left: 26px;
+        align-items: flex-start;
+        padding-top: 60px;
+        
     }
     .title{
         font-size: 48px;
@@ -106,11 +130,14 @@ span{
         font-size: 18px;
         line-height: 28px;
         text-align: left;
+        width: 445px;
+        font-weight: 400;
+        opacity: 0.9;
     }
     .buttons{
         position: absolute;
-        top: 415px;
-        left: -98px;
+        top: 503px;
+        left: 28px;
     }
     .first{
         width: 427px;
@@ -120,7 +147,7 @@ span{
         width: 162px;
         position: relative;
         bottom: 67px;
-        left: 133px;
+        left: 146px;
         margin-bottom: 0px;
     }
     .logos{
@@ -130,47 +157,48 @@ span{
     footer{
         background-image: url(./assets/desktop/bg-pattern-dots.svg);
         background-repeat: no-repeat;
-        background-position: left bottom;
+        background-position: left 30px bottom;
         width: 100%;
         height: 200px;
-        margin-left: 100px;
+        background-color: #121725;
     }
     .icons{
         width: 95.9px;
         height: 28.91px;
     }
+    .tag{
+        bottom: 64px;
+        right: 97px;
+    }
     
 }
 @media (min-width:1440px){
     body{
-        background-size: 700px 700px;
+        background-size: 1000px 900px;
         background-position: center right;
-    }
-    main{
-        overflow-x: hidden;
     }
     .logo{
         margin-left: 165px;
     }
     .text{
-        position: relative;
-        right: 200px;
-        top: 77px;
-        height: 596px;
-
+        height: 540px;
+    }
+    main{
+        width: 439px;
+    }
+    .text{
+        margin-left: 210px;
+        padding-left: 0px;
     }
     .title{
-        margin-top: 112px;
+        margin-top: 80px;
     }
     .buttons{
-        top: 383px;
+        top: 580px;
+        left: 211px;
     }
     footer{
-        height: 242px;
-        background-position: right;
-    }
-    .tag{
-        color:blue;
-        display: none;
+        background-position: right top;
+        position:relative;
     }
 }
